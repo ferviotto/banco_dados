@@ -37,106 +37,62 @@ Exercícios de Banco de Dados do Bootcamp da Generation patrocinado pela Microso
 9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_personagens com os dados da tabela tb_classes;
 10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_personagens com os dados da tabela tb_classes, apresentando apenas os personagens que pertençam a classe específica Mago;
 
+## Quinta Atividade:
+1. Criação de um banco de dados para um serviço de uma Pizzaria db_pizzaria_legal, onde o sistema trabalhará com as informações dos produtos comercializados pela empresa;
+2. Criação da tabela de categorias tb_categorias com 3 atributos relevantes: id (primary key), nome e descricao;
+3. Criação da tabela de pizzas tb_pizzas com 4 atributos relevantes aos produtos da pizzaria: id (primary key), nome, ingredientes, tamanho, valor e categoria_id (foreign key);
+4. Inserção de 5 registros na tb_categorias, utilizando as categorias: tradicional, especial, doce, vegetariana e vegana;
+5. Inserção de 8 registros na tb_pizzas, utilizando sabores de pizza com preenchimento da categoria_id (foreign key);
+6. Uso do SELECT para retornar as pizzas cujo valor seja maior do que R$ 45,00;
+7. Uso do SELECT para retornar as pizzas cujo valor esteja no intervalo R$ 50,00 e R$ 100,00;
+8. Uso do SELECT utilizando o operador LIKE para buscar as pizzas que possuam a letra M no atributo nome;
+9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_pizzas com os dados da tabela tb_categorias;
+10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados dada tabela tb_pizzas com os dados da tabela tb_categorias, apresentando apenas as pizzas que pertençam a categoria específica Especial;
 
-Atividade 2
+## Sexta Atividade:
+1. Criação de um banco de dados para um serviço de uma Farmácia db_farmacia_bem_estar, onde o sistema trabalhará com as informações dos produtos comercializados pela empresa;
+2. Criação da tabela de categorias tb_categorias com 3 atributos relevantes: id (primary key), nome e descricao;
+3. Criação da tabela de produtos tb_produtos com 6 atributos relevantes aos produtos da farmácia: id (primary key), nome, fabricante, validade, valor e categoria_id (foreign key);
+4. Inserção de 5 registros na tb_categorias, utilizando as categorias: medicamentos, suplementos, cosméticos, higiene e equipamentos;
+5. Inserção de 8 registros na tb_produtos, utilizando medicamentos conhecidos com preenchimento da categoria_id (foreign key);
+6. Uso do SELECT para retornar os produtos cujo valor seja maior do que R$ 50,00;
+7. Uso do SELECT para retornar os produtos cujo valor esteja no intervalo R$ 5,00 e R$ 60,00;
+8. Uso do SELECT utilizando o operador LIKE para buscar os produtos que possuam a letra C no atributo nome;
+9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_produtos com os dados da tabela tb_categorias;
+10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados dada tabela tb_produtos com os dados da tabela tb_categorias, apresentando apenas os produtos que pertençam a categoria específica Suplementos;
 
-Crie um banco de dados para um serviço de uma Pizzaria. O nome do Banco de dados deverá ter o seguinte nome db_pizzaria_legal. O sistema trabalhará com as informações dos produtos comercializados pela empresa. O sistema trabalhará com 2 tabelas tb_pizzas e tb_categorias, que deverão estar relacionadas.
+## Sétima Atividade:
+1. Criação de um banco de dados para um serviço de um Hortifruti db_cidade_dos_vegetais, onde o sistema trabalhará com as informações dos produtos comercializados pela empresa;
+2. Criação da tabela de categorias tb_categorias com 3 atributos relevantes: id (primary key), nome e descricao;
+3. Criação da tabela de produtos tb_produtos com 6 atributos relevantes aos produtos da hortifruti: id (primary key), nome, fabricante, validade, valor e categoria_id (foreign key);
+4. Inserção de 5 registros na tb_categorias, utilizando as categorias: frutas, verduras, legumes, grãos e ervas;
+5. Inserção de 8 registros na tb_produtos, utilizando alimentos conhecidos com preenchimento da categoria_id (foreign key);
+6. Uso do SELECT para retornar os produtos cujo valor seja maior do que R$ 50,00;
+7. Uso do SELECT para retornar os produtos cujo valor esteja no intervalo R$ 50,00 e R$ 150,00;
+8. Uso do SELECT utilizando o operador LIKE para buscar os produtos que possuam a letra C no atributo nome;
+9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_produtos com os dados da tabela tb_categorias;
+10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados dada tabela tb_produtos com os dados da tabela tb_categorias, apresentando apenas os produtos que pertençam a categoria específica Grãos;
 
+## Oitava Atividade:
+1. Criação de um banco de dados para um serviço de uma loja de Material de Construção db_construindo_vidas, onde o sistema trabalhará com as informações dos produtos comercializados pela empresa;
+2. Criação da tabela de categorias tb_categorias com 3 atributos relevantes: id (primary key), nome e descricao;
+3. Criação da tabela de produtos tb_produtos com 6 atributos relevantes aos produtos da loja: id (primary key), nome, fabricante, validade, valor e categoria_id (foreign key);
+4. Inserção de 5 registros na tb_categorias, utilizando as categorias: ferramentas, tintas, materiais, hidraúlica e elétrica;
+5. Inserção de 8 registros na tb_produtos, utilizando produtos conhecidos com preenchimento da categoria_id (foreign key);
+6. Uso do SELECT para retornar os produtos cujo valor seja maior do que R$ 100,00;
+7. Uso do SELECT para retornar os produtos cujo valor esteja no intervalo R$ 70,00 e R$ 150,00;
+8. Uso do SELECT utilizando o operador LIKE para buscar os produtos que possuam a letra C no atributo nome;
+9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_produtos com os dados da tabela tb_categorias;
+10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados dada tabela tb_produtos com os dados da tabela tb_categorias, apresentando apenas os produtos que pertençam a categoria específica Tintas;
 
-
-Boas Práticas:
-
-Crie a tabela tb_categorias e determine pelo menos 2 atributos, além da Chave Primária, relevantes para classificar as pizzas.
-Crie a tabela tb_pizzas e determine 4 atributos, além da Chave Primária, relevantes aos produtos da pizzaria.
-Não esqueça de criar a Foreign Key da tabela tb_categorias na tabela tb_pizzas.
-Insira 5 registros na tabela tb_categorias.
-Insira 8 registros na tabela tb_pizzas, preenchendo a Chave Estrangeira para criar a relação com a tabela tb_categorias.
-Faça um SELECT que retorne todas as pizzas cujo valor seja maior do que R$ 45,00.
-Faça um SELECT que retorne todas as pizzas cujo valor esteja no intervalo R$ 50,00 e R$ 100,00.
-Faça um SELECT utilizando o operador LIKE, buscando todas as pizzas que possuam a letra M no atributo nome.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_pizzas com os dados da tabela tb_categorias.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_pizzas com os dados da tabela tb_categorias, onde traga apenas as pizzas que pertençam a uma categoria específica (Exemplo: Todas as pizzas que são doce).
-Salve todas as queries para cada um dos requisitos do exercício em um único script (arquivo .SQL) e coloque no seu Github pessoal, no repositório que você criou sobre Banco de dados.
-
-Atividade 3
-
-Crie um banco de dados para um serviço de uma Farmácia. O nome do Banco de dados deverá ter o seguinte nome db_farmacia_bem_estar. O sistema trabalhará com as informações dos produtos comercializados pela empresa. O sistema trabalhará com 2 tabelas tb_produtos e tb_categorias, que deverão estar relacionadas.
-
-
-
-Boas Práticas:
-
-Crie a tabela tb_categorias e determine pelo menos 2 atributos, além da Chave Primária, relevantes para classificar os produtos.
-Crie a tabela tb_produtos e determine 4 atributos, além da Chave Primária, relevantes aos produtos da farmácia.
-Não esqueça de criar a Foreign Key da tabela tb_categorias na tabela tb_produtos.
-Insira 5 registros na tabela tb_categorias.
-Insira 8 registros na tabela tb_produtos, preenchendo a Chave Estrangeira para criar a relação com a tabela tb_categorias.
-Faça um SELECT que retorne todes os produtos cujo valor seja maior do que R$ 50,00.
-Faça um SELECT que retorne todes os produtos cujo valor esteja no intervalo R$ 5,00 e R$ 60,00.
-Faça um SELECT utilizando o operador LIKE, buscando todes os produtos que possuam a letra C no atributo nome.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias, onde traga apenas os produtos que pertençam a uma categoria específica (Exemplo: Todes os produtos que pertencem a categoria cosméticos).
-Salve todas as queries para cada um dos requisitos do exercício em um único script (arquivo .SQL) e coloque no seu Github pessoal, no repositório que você criou sobre Banco de dados.
-
-Atividade 4
-
-Crie um banco de dados para um serviço de um Açougue ou de um Hortifruti. O nome do Banco de dados deverá ter o seguinte nome db_cidade_das_carnes ou cidade_dos_vegetais. O sistema trabalhará com as informações dos produtos comercializados pela empresa. O sistema trabalhará com 2 tabelas tb_produtos e tb_categorias, que deverão estar relacionadas.
-
-
-
-Boas Práticas:
-
-Crie a tabela tb_categorias e determine pelo menos 2 atributos, além da Chave Primária, relevantes para classificar os produtos.
-Crie a tabela tb_produtos e determine 4 atributos, além da Chave Primária, relevantes aos produtos da farmácia.
-Não esqueça de criar a Foreign Key da tabela tb_categorias na tabela tb_produtos.
-Insira 5 registros na tabela tb_categorias.
-Insira 8 registros na tabela tb_produtos, preenchendo a Chave Estrangeira para criar a relação com a tabela tb_categorias.
-Faça um SELECT que retorne todes os produtos cujo valor seja maior do que R$ 50,00.
-Faça um SELECT que retorne todes os produtos cujo valor esteja no intervalo R$ 50,00 e R$ 150,00.
-Faça um SELECT utilizando o operador LIKE, buscando todes os produtos que possuam a letra C no atributo nome.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias, onde traga apenas os produtos que pertençam a uma categoria específica (Exemplo: Todes os produtos que pertencem a categoria aves ou frutas).
-Salve todas as queries para cada um dos requisitos do exercício em um único script (arquivo .SQL) e coloque no seu Github pessoal, no repositório que você criou sobre Banco de dados.
-
-Atividade 5
-
-Crie um banco de dados para um serviço de uma loja de Material de Construção. O nome do Banco de dados deverá ter o seguinte nome db_construindo_vidas. O sistema trabalhará com as informações dos produtos comercializados pela empresa. O sistema trabalhará com 2 tabelas tb_produtos e tb_categorias, que deverão estar relacionadas.
-
-
-
-Boas Práticas:
-
-Crie a tabela tb_categorias e determine pelo menos 2 atributos, além da Chave Primária, relevantes para classificar os produtos.
-Crie a tabela tb_produtos e determine 4 atributos, além da Chave Primária, relevantes aos produtos da farmácia.
-Não esqueça de criar a Foreign Key da tabela tb_categorias na tabela tb_produtos.
-Insira 5 registros na tabela tb_categorias.
-Insira 8 registros na tabela tb_produtos, preenchendo a Chave Estrangeira para criar a relação com a tabela tb_categorias.
-Faça um SELECT que retorne todes os produtos cujo valor seja maior do que R$ 100,00.
-Faça um SELECT que retorne todes os produtos cujo valor esteja no intervalo R$ 70,00 e R$ 150,00.
-Faça um SELECT utilizando o operador LIKE, buscando todes os produtos que possuam a letra C no atributo nome.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_produtos com os dados da tabela tb_categorias, onde traga apenas os produtos que pertençam a uma categoria específica (Exemplo: Todes os produtos que pertencem a categoria hidráulica).
-Salve todas as queries para cada um dos requisitos do exercício em um único script (arquivo .SQL) e coloque no seu Github pessoal, no repositório que você criou sobre Banco de dados.
-
-
-Atividade 6
-
-Crie um banco de dados para uma plataforma de Cursos Online (EAD). O nome do Banco de dados deverá ter o seguinte nome db_curso_da_minha_vida. O sistema trabalhará com as informações dos produtos comercializados pela empresa. O sistema trabalhará com 2 tabelas tb_cursos e tb_categorias, que deverão estar relacionadas.
-
-
-
-Boas Práticas:
-
-Crie a tabela tb_categorias e determine pelo menos 2 atributos, além da Chave Primária, relevantes para classificar os produtos.
-Crie a tabela tb_cursos e determine 4 atributos, além da Chave Primária, relevantes aos produtos da farmácia.
-Não esqueça de criar a Foreign Key da tabela tb_categorias na tabela tb_cursos.
-Insira 5 registros na tabela tb_categorias.
-Insira 8 registros na tabela tb_cursos, preenchendo a Chave Estrangeira para criar a relação com a tabela tb_categorias.
-Faça um SELECT que retorne todes os cursos cujo valor seja maior do que R$ 500,00.
-Faça um SELECT que retorne todes os cursos cujo valor esteja no intervalo R$ 600,00 e R$ 1000,00.
-Faça um SELECT utilizando o operador LIKE, buscando todes os cursos que possuam a letra J no atributo nome.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_cursos com os dados da tabela tb_categorias.
-Faça um SELECT utilizando a cláusula INNER JOIN, unindo os dados da tabela tb_cursos com os dados da tabela tb_categorias, onde traga apenas os produtos que pertençam a uma categoria específica (Exemplo: Todes os cursos que pertencem a categoria Java).
-Salve todas as queries para cada um dos requisitos do exercício em um único script (arquivo .SQL) e coloque no seu Github pessoal, no repositório que você criou sobre Banco de dados.
-
-
+## Nona Atividade:
+1. Criação de um banco de dados para uma plataforma de Cursos Online (EAD) db_curso_da_minha_vida, onde o sistema trabalhará com as informações dos produtos comercializados pela empresa;
+2. Criação da tabela de categorias tb_categorias com 3 atributos relevantes: id (primary key), nome e descricao;
+3. Criação da tabela de produtos tb_cursos com 6 atributos relevantes aos produtos da loja: id (primary key), nome, descricao, duracao, valor e categoria_id (foreign key);
+4. Inserção de 5 registros na tb_categorias, utilizando as categorias: programação, design, marketing, negícos e idiomas;
+5. Inserção de 8 registros na tb_cursos, utilizando cursos conhecidos com preenchimento da categoria_id (foreign key);
+6. Uso do SELECT para retornar os produtos cujo valor seja maior do que R$ 500,00;
+7. Uso do SELECT para retornar os produtos cujo valor esteja no intervalo R$ 600,00 e R$ 1000,00;
+8. Uso do SELECT utilizando o operador LIKE para buscar os produtos que possuam a letra J no atributo nome;
+9. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_cursos com os dados da tabela tb_categorias;
+10. Uso do SELECT utilizando a cláusula INNER JOIN para unir os dados da tabela tb_cursos com os dados da tabela tb_categorias, apresentando apenas os produtos que pertençam a categoria específica Programação;
